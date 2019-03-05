@@ -5,7 +5,7 @@ struct Rectangle {
 }
 
 impl Rectangle {
-    fn from(width: u32, height: u32) -> Rectangle {
+    fn new(width: u32, height: u32) -> Rectangle {
         Rectangle { width, height }
     }
 
@@ -19,9 +19,9 @@ impl Rectangle {
 }
 
 fn main() {
-    let rect1 = Rectangle::from(30, 50);
-    let rect2 = Rectangle::from(20, 10);
-    let rect3 = Rectangle::from(10, 60);
+    let rect1 = Rectangle::new(30, 50);
+    let rect2 = Rectangle::new(20, 10);
+    let rect3 = Rectangle::new(10, 60);
 
     println!("area: {}", rect1.area());
 
